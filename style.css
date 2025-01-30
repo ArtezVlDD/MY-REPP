@@ -1,0 +1,29 @@
+.title {
+    background-color: gray;
+    animation: color-change 5s infinite;
+}
+
+.heading {
+    color: darkblue;
+    animation: color-change 5s infinite;
+}
+
+.heading-about {
+    color: orange;
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color:blue;
+        background-color: aqua;
+        font-size: 60px;
+    }
+
+    50% {
+        color: blueviolet;
+        background-color: brown;
+        font-size: 30px;
+    }
+
+}
