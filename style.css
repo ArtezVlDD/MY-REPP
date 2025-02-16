@@ -1,29 +1,46 @@
-.title {
-    background-color: gray;
-    animation: color-change 5s infinite;
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.heading {
-    color: darkblue;
-    animation: color-change 5s infinite;
+body {
+    background-image: url(https://i.pinimg.com/736x/ea/2c/f6/ea2cf6975ca4178d53a27b72c301f7b2.jpg);
+    background-size: cover;
 }
 
-.heading-about {
-    color: orange;
-    animation: color-change 5s infinite;
-}
-
-@keyframes color-change {
+@keyframes float {
     0% {
-        color:blue;
-        background-color: aqua;
-        font-size: 60px;
+        transform: translateY(0);
     }
 
     50% {
-        color: blueviolet;
-        background-color: brown;
-        font-size: 30px;
+        transform: translateY(-7px);
     }
 
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: float 3s ease-in-out infinite;
+}
+
+a:hover {
+    color: #00fbff; 
+    text-decoration: underline; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.choise {
+    animation: float 3s ease-out infinite;
 }
