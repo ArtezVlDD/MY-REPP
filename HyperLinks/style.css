@@ -1,0 +1,163 @@
+
+
+.an-page-1 {
+    text-align: center;
+}
+
+.task-head {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(to top, #0077ff, #82d1ff);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.task-5 {
+    background-color: #ffd979;
+    width: 500px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+
+.head-task-5 {
+    color: red;
+}
+
+.new-page-task-5 {
+    background-color: #a4f0ff;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.new-head-task-5 {
+    color: #0026ff;
+}
+
+.div-task-6 {
+    background-color: #c9ff78;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.head-task-6 {
+    color: red;
+}
+
+.new-page-task-6 {
+    background-color: #fbddac;
+    width: 700px;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.new-head-task-6 {
+    color: red;
+}
+
+.termin {
+    font-style: italic;
+    color: #0077ff;
+}
+
+.letter {
+    color: red;
+}
+
+.navigation {
+    text-decoration: none;
+}
+
+.main-task-7 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.task-8 {
+    border-collapse: collapse; 
+}
+  
+.task-8 th, .task-8 td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 180px;
+    height: 10px;
+}
+
+.task-8 th {
+    background-color: #5dceff;
+}
+
+.task-8 td {
+    background-color: #afe3f9;
+}
+
+.task-8 a {
+    text-decoration: none;
+    color: black;
+}
+
+.employee-card {
+    border-collapse: collapse; 
+}
+
+.employee-card th, .employee-card td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 180px;
+    height: 35px;
+}
+
+.col-2 {
+    background-color: #ffc1a5;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.col-3, .col-4 {
+    background-color: yellow;
+}
+
+/*---Задание 9---*/
+
+.task-9 {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.task-9 header, .task-9 footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.task-9 main {
+    padding: 20px;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.map-container img {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* Стили для ссылок на карте */
+area {
+    outline: #0026ff; 
+}
+
+area:hover {
+   cursor: pointer; 
+}
+
