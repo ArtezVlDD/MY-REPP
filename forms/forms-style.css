@@ -1,0 +1,212 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.task-title {
+    background: linear-gradient(red, yellow);
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.task-4-form {
+    background-color: #ffa9ea;
+    padding: 25px;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.task-4-title {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.btn {
+    background-color: #dfdede;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: #bebcbc;
+}
+
+.task-6-form {
+    background-color: #5afff1;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+h4 span {
+    color: blue;
+    font-size: 25px;
+}
+
+/*Задание №7*/
+
+.form-7 {
+    background-color: #9ee391;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.budget {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-comp {
+    float: left;
+    box-sizing: border-box;
+}
+
+.form-7 h1 {
+    color: green;
+}
+
+.container h2 {
+    color: blue;
+}
+
+/*Задание 8*/
+
+.task-8 {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #9d9d9d;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.task-8 form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.task-8 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.task-8 input[type="text"],
+textarea,
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+.task-8 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.task-8 input[type="radio"] {
+    margin-right: 5px;
+}
+
+.task-8 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.task-8 button:hover {
+    background-color: #2e7030;
+}
+
+.task-8 .clear-button {
+    background-color: #f44336;
+}
+
+.task-8 .clear-button:hover {
+    background-color: #9d2525;
+}
+
+.task-8 .product-item {
+    margin-bottom: 10px;
+}
+  
+.task-8 .product-item label {
+    font-weight: normal;
+}
+  
+.task-8 .product-price {
+    float: right;
+    font-weight: bold;
+}
+
+.task-9 {
+    margin: 0 auto;
+}
+
+.task-9 a {
+    color: purple;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.task-9 a:hover {
+    font-size: 30px;
+    color: #ff68d7;
+}
+
+/*Задание 10*/
+
+.calculator {
+    background-color: #fff200;
+    margin: 0 auto;
+    width: 300px;
+    padding: 25px;
+}
+
+.row {
+    padding: 5px;
+}
+
+.calculator input[type="text"] {
+    height: 25px;
+    border: 1px solid black;
+}
+
+.calculator h1 {
+    color: red;
+}

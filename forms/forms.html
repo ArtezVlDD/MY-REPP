@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы в HTML</title>
+    <link rel="stylesheet" href="./forms-style.css">
+</head>
+<body>
+    <h1 ><span class="task-title">Задание №1</span></h1>
+    <hr>
+
+    <FORM>
+    <P> Фамилия: <INPUT TYPE=text SIZE=30> <BR> Адрес: <INPUT TYPE=TEXT SIZE=30> </P>
+    <P> Пол: <INPUT TYPE=RADIO> М <INPUT TYPE=RADIO> Ж </P>
+    </FORM>
+
+    <h1 ><span class="task-title">Задание №2</span></h1>
+    <hr>
+    
+        <FORM>
+            <P> Фамилия: <INPUT TYPE=text SIZE=30> </P>
+            <P> Какой язык вы изучали? </P>
+            <INPUT TYPE=CHECKBOX> <I> английский </I> <BR>
+            <INPUT TYPE=CHECKBOX> <I> немецкий </I> <BR>
+            <INPUT TYPE=CHECKBOX> <I> французский </I> <BR>
+            <INPUT TYPE=CHECKBOX> <I> другой </I> <BR>
+            </FORM>
+    
+    <h1 ><span class="task-title">Задание №3</span></h1>
+    <hr>
+    
+    <FORM>
+        <INPUT TYPE=text SIZE=30> <BR> Адрес:
+        <INPUT TYPE=TEXT SIZE=30> <BR>
+        <P> Каким браузером вы пользуетесь? </P>
+        <SELECT>
+            <OPTION> Internet Explorer </OPTION>
+            <OPTION> Netscape Navigator </OPTION>
+            <OPTION> Opera </OPTION>
+        </SELECT>
+    </FORM>
+    
+    <h1 ><span class="task-title">Задание №4</span></h1>
+
+    <FORM>
+        <P> Ваши пожелания по организации сайта? </P>
+        <TEXTAREA> Введите текст </TEXTAREA>
+        <INPUT TYPE=SUBMIT VALUE=«Отправить»>
+        <INPUT TYPE=RESET VALUE=«Очистить»>
+    </FORM>
+    
+    <h1><span class="task-title">Задание №5</span></h1>
+    <hr>
+
+    <form action="#">
+        <div class="task-4-form">
+            <p class="task-4-title" align="center">Анкета абитуриента</p>
+            <input type="text" id="last-name">
+            <label for="#last-name">- Фамилия</label>
+            <br>
+            <br>
+            <input type="text" id="name">
+            <label for="#name">- Имя</label>
+            <br>
+            <br>
+            <input type="text" id="father-name">
+            <label for="#father-name">- Отчество</label>
+            <br>
+            <br>
+    
+            <span><b>Пол: </b></span>
+            <label for="#m">М</label>
+            <input type="checkbox" id="m">
+            <label for="#zh">Ж</label>
+            <input type="checkbox" id="zh">
+            <br>
+            <br>
+    
+            <span><b>Знание иностранного языка</b></span>
+            <br>
+            <br>
+            <input type="checkbox" id="eng">
+            <label for="#eng">Английский</label>
+            <br>
+            <br>
+            <input type="checkbox" id="deu">
+            <label for="#deu">Немецкий</label>
+            <br>
+            <br>
+            <input type="checkbox" id="fr">
+            <label for="#fr">Французский</label>
+            <br>
+            <br>
+    
+            <button type="submit" class="btn task-4-btn">Отправить</button>
+            <br>
+        </div>
+    </form>
+
+    <h1><span class="task-title">Задание №6</span></h1>
+    <hr>
+
+    <form action="#">
+        <div class="task-6-form">
+            <h4 align="center"><span class="task-6-title">Гостевая книга</span></h4>
+            <br>
+            <br>
+
+            <input type="text">
+            <label for="">- Фамилия</label>
+            <br>
+            <br>
+            <input type="text">
+            <label for="">- Имя</label>
+            <br>
+            <br>
+
+            <span><b>Ваши  пожелания по работе фирмы: </b></span>
+            <br>
+            <br>
+            <textarea name="" id="" placeholder="Введите здесь свое сообщение"></textarea>
+            <br>
+            <br>
+
+            <span><b>Укажите товары, наиболее вам понравившиеся:</b></span>
+            <br>
+            <br>
+            <select name="" id="">
+                <option value="printers">Принтеры</option>
+                <option value="scaners">Сканеры</option>
+            </select>
+            <br>
+            <br>
+
+            <button type="submit" class="btn">Отправить</button> <button type="reset" class="btn">Сброс</button>
+        </div>
+
+
+    </form>
+
+    <h1><span class="task-title">Задание №7</span></h1>
+    <hr>
+
+    <div class="form-7">
+        <h1 align="center">Бланк заказа</h1>
+      
+        <div class="container">
+          <form action="#" method="post">
+            <div class="main-form-container">
+
+              <div class="image-comp">
+                <img src="./images/24f8999c60d17949a141d55ae60e72b3.png" alt="computer" width="200">
+              </div>
+  
+              <div class="form-group">
+                  <input type="text" id="name" name="name">
+                  <label for="name">  Фамилия</label>
+              </div>
+              <br>
+        
+              <div class="form-group">
+                  <input type="text" id="address" name="address">
+                  <label for="address"> Адрес</label>
+              </div>
+              <br>
+        
+              <div class="form-group">
+                  <input type="tel" id="phone" name="phone">
+                  <label for="phone">  Телефон</label>
+              </div>
+            </div>
+      
+            <h2 align="center">Наши товары</h2>
+            <div class="products">
+              <div class="product">
+                <label>
+                  <input type="checkbox" name="product1" value="product1">
+                  <img src="./images/79253861ad68bd6c16b6dbfdd5aab36d.png" alt="mouse1" width="100">
+                </label>
+              </div>
+      
+              <div class="product">
+                <label>
+                  <input type="checkbox" name="product2" value="product2">
+                  <img src="./images/79253861ad68bd6c16b6dbfdd5aab36d.png" alt="mouse1" width="100">
+                </label>
+              </div>
+      
+              <div class="product">
+                <label>
+                  <input type="checkbox" name="product3" value="product3">  
+                  <img src="./images/79253861ad68bd6c16b6dbfdd5aab36d.png" alt="mouse1" width="100">
+                </label>
+              </div>
+            </div>
+      
+            <h2 align="center">Сумма, которой вы располагаете</h2>
+            <div class="budget">
+              <label>
+                <input type="radio" name="budget" value="100">
+                $100
+              </label>
+      
+              <label>
+                <input type="radio" name="budget" value="500">
+                $500
+              </label>
+      
+              <label>
+                <input type="radio" name="budget" value="1000">
+                $1000
+              </label>
+            </div>
+            <br>
+      
+            <div class="buttons">
+              <button type="submit" class="btn">Отправить</button>
+              <button type="reset" class="btn">Сброс</button>
+            </div>
+            <br>
+        </div>
+    </div>
+    <hr>
+
+    <h1><span class="task-title">Задание №8</span></h1>
+
+    <div class="task-8">
+      <h1>Оформление заказа</h1>
+
+      <form action="#">
+        
+        <fieldset>
+          <legend>Выберите товары:</legend>
+
+          <div class="task-8-product">
+              <label>
+                <input type="checkbox">Лицензионная версия Windows 10
+                <span class="product-price">4000 ₽</span>
+              </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Лицензионная версия Windows 11
+              <span class="product-price">5000 ₽</span>
+            </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Видеокарта Radeon RX580 8gb
+              <span class="product-price">9000 ₽</span>
+            </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Видеокарта GeForce RTX 4060 OC Low Profile
+              <span class="product-price">40 000 ₽</span>
+            </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Оперативная память Viper Elite II 16gb
+              <span class="product-price">3500 ₽</span>
+            </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Процессор Intel Core I5
+              <span class="product-price">4500 ₽</span>
+            </label>
+          </div>
+
+          <div class="task-8-product">
+            <label>
+              <input type="checkbox">Процессор AMD Ryzen 5
+              <span class="product-price">9500 ₽</span>
+            </label>
+          </div>
+        </fieldset>
+        <br>
+
+        <label for="address">Адрес доставки:</label>
+        <input type="text" id="address" name="address" required placeholder="Введите адрес доставки">
+
+        <fieldset>
+          <legend>Способ оплаты:</legend>
+          <label><input type="radio" name="payment" value="cash" required>Наличными курьеру</label><br>
+          <label><input type="radio" name="payment" value="bank">Банковский перевод</label>
+        </fieldset>
+        <br>
+
+        <label for="feedback">Ваше мнение о сайте:</label>
+        <select id="feedback" name="feedback">
+          <option value="excellent">Отлично</option>
+          <option value="good">Хорошо</option>
+          <option value="average">Посредственно</option>
+          <option value="bad">Плохо</option>
+          <option value="very_bad">Очень плохо</option>
+        </select>
+        <br>
+        
+        <fieldset>
+          <legend>Пожелания:</legend>
+          <textarea id="wishes" name="wishes" rows="4" placeholder="Оставьте ваши пожелания"></textarea>
+        </fieldset>
+        <br>
+
+        <div class="btns-for-task8">
+          <button type="submit">Заказать</button>
+          <button type="reset" class="clear-button">Очистить</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+
+    <h1><span class="task-title">Задание №9</span></h1>
+
+    <div class="task-9">
+      <h3 align="center"><a href="task9.html">Нажмите</a>, чтобы перейти к заданию 9</h3>
+    </div>
+
+    <h1><span class="task-title">Задание №10</span></h1>
+
+    <div class="calculator">
+      <h1 align="center">Калькулятор</h1>
+  
+      <div class="row">
+        <input type="text" id="num1">
+        <span class="labels">- Первое число</span>
+      </div>
+  
+      <div class="row">
+        <input type="text" id="num2">
+        <span class="labels">- Второе число</span>
+      </div>
+  
+      <div class="row">
+        <input type="text" id="result" readonly>
+        <span class="labels">- Результат</span>
+      </div>
+  
+      <div class="row">
+        <button class="btn">+</button>
+        <button class="btn">-</button>
+        <button class="btn">*</button>
+        <button class="btn">/</button>
+      </div>
+  
+      <p align="center"><button id="clear" class="btn">Очистить</button></p>
+    </div>
+  
+</body>
+</html>
