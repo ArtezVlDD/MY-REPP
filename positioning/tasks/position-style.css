@@ -1,0 +1,207 @@
+/* ------ОБЩИЕ СТИЛИ------ */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task-head {
+    background-color: #69bff9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin: 0 auto;
+}
+
+/*------ЗАДАНИЕ №1------*/
+.task-1 .one {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+/*------ЗАДАНИЕ №2------*/
+.image {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+}
+
+.text {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    z-index: 1;
+    font-size: 30px;
+    color: red;
+}
+
+/*------ЗАДАНИЕ №4------*/
+.image-1 {
+    position: absolute;
+    z-index: 0;
+}
+
+.image-2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.image-3 {
+    position: absolute;
+    z-index: 2;
+}
+
+/* ---ЗАДАНИЕ №5------ */
+.task5 {
+    margin: 0 auto;
+}
+
+.t5-image1 {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+.t5-image2 {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: -400px;
+    left: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+}
+
+.t5-paragraph {
+    font-size: 50px;
+    font-style: italic;
+    color: red;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+}
+.t5-text {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    z-index: 2;
+}
+
+/* ------ЗАДАНИЕ №6------ */
+.task6-img {
+    margin: 0 auto;
+}
+.t6-text1 {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    left: 150px;
+    top: -120px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.t6-text2 {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+    top: -180px;
+    left: 165px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.t6-text3 {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 3;
+    position: relative;
+    top: -240px;
+    left: 180px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ------ЗАДАНИЕ №7------ */
+.t7-img2 {
+    position: relative;
+    top: -350px;
+    left: 200px;
+}
+.t7-text1 {
+    position: relative;
+    top: -650px;
+    left: 175px;
+}
+.t7-text2 {
+    position: relative;
+    top: -600px;
+    left: 225px;
+}
+
+/* ------ЗАДАНИЕ №8------ */
+
+.t8-img {
+    position: relative;
+    top: -510px;
+    left: 50px;
+}
+
+.t8-text {
+    position: relative;
+    top: -1110px;
+    left: 60px;
+}
+
+.task-8 {
+    margin: 0 auto;
+}
+
+/* ------ЗАДАНИЕ №9------ */
+
+.t9-image-1 {
+    position: relative;
+    top: -350px;
+    left: 30px;
+}
+.t9-image-2 {
+    position: relative;
+    top: -550px;
+    left: 50px;
+}
+.t9-image-3 {
+    position: relative;
+    top: -780px;
+    left: 300px;
+}
+.t9-image-4 {
+    position: relative;
+    top: -1030px;
+    left: 330px;
+}
+.t9-image-5 {
+    position: relative;
+    top: -1330px;
+    left: 570px;
+}
+.t9-image-6 {
+    position: relative;
+    top: -1580px;
+    left: 590px;
+}
+.t9-text {
+    position: relative;
+    top: -1990px;
+    left: 270px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
