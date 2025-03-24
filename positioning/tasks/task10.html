@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравительная открытка</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .card {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            perspective: 1500px;
+            cursor: pointer;
+        }
+        
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .card-front {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        .card-back {
+            background: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #f00;
+            opacity: 0.7;
+            animation: fall 5s linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(500px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            color: white;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .back-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        
+        .back-text {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #ff6b6b;
+            margin-top: 20px;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .btn {
+            background: white;
+            color: #ff6b6b;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <!-- Создаем конфетти -->
+                <div class="confetti" style="left: 10%; animation-delay: 0s; background-color: #ff6b6b;"></div>
+                <div class="confetti" style="left: 20%; animation-delay: 0.5s; background-color: #ffd166;"></div>
+                <div class="confetti" style="left: 30%; animation-delay: 1s; background-color: #06d6a0;"></div>
+                <div class="confetti" style="left: 40%; animation-delay: 1.5s; background-color: #118ab2;"></div>
+                <div class="confetti" style="left: 50%; animation-delay: 2s; background-color: #ef476f;"></div>
+                <div class="confetti" style="left: 60%; animation-delay: 2.5s; background-color: #7b2cbf;"></div>
+                <div class="confetti" style="left: 70%; animation-delay: 3s; background-color: #ff9a9e;"></div>
+                <div class="confetti" style="left: 80%; animation-delay: 3.5s; background-color: #83c5be;"></div>
+                <div class="confetti" style="left: 90%; animation-delay: 4s; background-color: #ffddd2;"></div>
+                
+                <!-- Плавающие сердечки -->
+                <div class="heart" style="top: 10%; left: 15%; animation-delay: 0s;">❤</div>
+                <div class="heart" style="top: 20%; left: 80%; animation-delay: 0.5s;">❤</div>
+                <div class="heart" style="top: 70%; left: 25%; animation-delay: 1s;">❤</div>
+                <div class="heart" style="top: 60%; left: 70%; animation-delay: 1.5s;">❤</div>
+                
+                <h1>С Днём Рождения!</h1>
+                <p>Пусть этот день принесёт тебе море радости,<br>улыбок и незабываемых моментов!</p>
+                <button class="btn">Открыть открытку</button>
+            </div>
+            <div class="card-back">
+                <h2 class="back-title">С наилучшими пожеланиями!</h2>
+                <p class="back-text">
+                    Желаю крепкого здоровья, счастья, успехов во всех начинаниях!<br>
+                    Пусть каждый день будет наполнен теплом, любовью и радостью.<br>
+                    Оставайся таким же замечательным человеком!
+                </p>
+                <div class="signature">С уважением,<br>Влад</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
