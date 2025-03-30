@@ -1,48 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Мой сайт (главная) | by ArtezVlDD</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/fd6232675c.js" crossorigin="anonymous"></script>
     <base href="#" target="_blank">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">ARTEZ</div>
 
+    <header>
+        <div class="logo">ARTEZ</div>
+        <nav>
             <ul>
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Задания <i class="fas fa-arrow-circle-down"></i></a>
-                    <ul>
-                        <li><a href="./HTMLpractice/A_MAIN_MENU.html">Практика</a></li>
-                        <li><a href="./TextFormating/HomeWorkNav.html">Форматирование</a></li>
-                        <li><a href="./UsingGraphicsInHTML/Navigation.html">Графика HTML</a></li>
-                        <li><a href="./MakingTablesInHTML.html">Таблицы</a></li>
-                        <li><a href="./HyperLinks/Hyperlinks.html">Гиперссылки</a></li>
-                        <li><a href="./forms/forms.html">Формы в HTML</a></li>
-                        <li><a href="./positioning/choosing.html">Позиционирование</a></li>
-                    </ul>
+                <li >
+                    <a href="#" class = "dropbtn">Задания</a>
+                    <div class="dropdown-menu">
+                        <a href="./HTMLpractice/A_MAIN_MENU.html">Практика</a>
+                        <a href="./TextFormating/HomeWorkNav.html">Форматирование</a>
+                        <a href="./UsingGraphicsInHTML/Navigation.html">Графика HTML</a>
+                        <a href="./MakingTablesInHTML.html">Таблицы</a>
+                        <a href="./HyperLinks/Hyperlinks.html">Гиперссылки</a>
+                        <a href="./forms/forms.html">Формы в HTML</a>
+                        <a href="./positioning/choosing.html">Позиционирование</a>
+                    </div>
+                     <div class="dropdown-mobile">
+                        <a href="./HTMLpractice/A_MAIN_MENU.html">Практика</a>
+                        <a href="./TextFormating/HomeWorkNav.html">Форматирование</a>
+                        <a href="./UsingGraphicsInHTML/Navigation.html">Графика HTML</a>
+                        <a href="./MakingTablesInHTML.html">Таблицы</a>
+                        <a href="./HyperLinks/Hyperlinks.html">Гиперссылки</a>
+                        <a href="./forms/forms.html">Формы в HTML</a>
+                        <a href="./positioning/choosing.html">Позиционирование</a>
+                     </div>
                 </li>
-                <li><a href="#">Информация <i class="fas fa-arrow-circle-down"></i></a>
-                    <ul>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">О создателе</a></li>
                 <li><a href="#">Контакты</a></li>
-                <li><a href="https://github.com/ArtezVlDD"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="./lesson3/registration.html">Регистрация</a></li>
+                <li><a href="https://github.com/ArtezVlDD">Github <i class="fa-brands fa-github"></i></a></li>
             </ul>
         </nav>
+        <div class="burger-menu">&#9776;</div>
     </header>
 
-    <h1 align="center">Сайт студента, изучающего HTML & CSS</h1>
-    <ul>
-        <li><a href="./lesson3/registration.html" class="btn">Регистрация</a></li>
-        <li><a href="#" class="sign-in">Вход</a></li>
-    </ul>
+    <main>
+        <h1 style="font-size: 50px">Мой сайт</h1>
+        <p><b>На этом сайте присутствует адаптация под мобильные устройства.</b></p>
+    </main>
+
+    <footer>
+        &copy; 2023 Мой сайт; Все права защищены
+        <p>Контактная информация: (её здесь нет)</p>
+    </footer>
+
+    <script>
+         const burgerMenu = document.querySelector('.burger-menu');
+        const nav = document.querySelector('nav');
+        const dropbtn = document.querySelector('.dropbtn');
+        const li_dropbtn = dropbtn.closest("li");
+
+
+
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+        });
+
+         dropbtn.addEventListener('click', (event) => {
+              if(window.innerWidth <= 768){
+               event.preventDefault(); //отключить переход по ссылке
+               li_dropbtn.classList.toggle("active");
+              }
+         });
+    </script>
 </body>
 </html>

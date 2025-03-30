@@ -1,125 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.5s;
-    font-family: 'Poppins', sans-serif;
-}
-
-:root {
-    --black: #000;
-}
-
+/* Общие стили */
 body {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./images/background.jpg), no-repeat;
-    background-position: center;
-    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
+/* Шапка сайта */
+header {
+    background-color: #ffa500;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8%;
 }
 
-header nav .logo {
-    font-size: 1.5rem;
-    color: var(--black);
-    font-weight: 900;
-    cursor: pointer;
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-right: 18px;
+    padding-left: 18px;
+    background-color: #946102;
+    border-radius: 5px;
 }
 
-nav ul li {
-    position: relative;
-    float: left;
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-nav ul li a {
+nav li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav a {
     text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    /* border: 2px solid #fff; */
+    border-radius: 4px;
     display: block;
-    padding: 15px;
-    color: black;
-    
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background: #000;
+nav a:hover {
+    background-color: #fff;
+    color: #ffa500;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffa500;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    padding: 8px 12px;
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #fff;
+    color: #ffa500;
+}
+
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    flex: 1;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Футер */
+footer {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Бургер-меню и адаптивность */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
     color: #fff;
 }
 
-nav ul li ul {
-    position: absolute;
-    left: 0;
-    width: 180px;
-    background: #fff;
+/* Изначально скрываем .dropdown-mobile на всех устройствах */
+.dropdown-mobile {
     display: none;
 }
 
-nav ul li ul li {
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ba7f11; /*#ffa500*/
+        text-align: center;
+        z-index: 10;
+    }
+
+    nav a {
+        border: 2px solid white;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+   nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    /* Включаем отображение .dropdown-mobile только на мобильных */
+    .dropdown-mobile {
+        display: none;
+        text-align: center; /* Выравнивание по центру */
+        padding: 10px 0; /* Отступы сверху и снизу */
+    }
+
+    .dropdown-mobile a {
+        display: block;
+        padding: 5px;
+        margin: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .dropbtn {
+        display: block;
+    }
+
+
+/*Скрываем выпадающее меню по умолчанию на мобильных устройствах*/
+nav li:hover .dropdown-menu {
+    display: none;
 }
 
-nav ul li:hover > ul{
-    display: initial;
+/*Показывать выпадающее меню при наличии класса 'active'*/
+li.active > .dropdown-mobile {
+    display: block;
 }
 
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 2.5rem;
-    width: 500px;
+ /*Поменяем стили чтобы выпадающее меню выглядело иначе*/
+.dropdown-menu {
+    position: static;
+    display: none;
+    background-color: transparent;
+    padding: 0px;
 }
 
-nav ul li a[href="https://github.com/ArtezVlDD"] {
-    margin-left: 70px;
-}
 
-.btn {
-    position: absolute;
-    top: 61%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    padding: 1em;
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    font-weight: 600;
-    border-radius: 10px;
 }
-
-.btn:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.sign-in {
-    position: absolute;
-    top: 61%;
-    left: 53.3%;
-    transform: translate(-50%, -50%);
-    padding: 1em;
-    text-decoration: none;
-    background-color: #ff7700;
-    color: #000;
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-.sign-in:hover {
-    background-color: #000;
-    color: #fff;
+.show-nav {
+    display: block;
 }
