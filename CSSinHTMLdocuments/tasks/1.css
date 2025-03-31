@@ -1,4 +1,4 @@
-h1 {
+.task4-head {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     padding: 20px;
@@ -6,4 +6,130 @@ h1 {
     text-align: center;
     border: 3px solid black;
     border-radius: 5px;
+}
+
+/* Стили к заданию 7 */
+
+.task7-head {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.task7-paragraph {
+    font-size: 14px;
+    font-family: Monotype Corsiva;
+}
+
+.task7-img {
+    width: 400px;
+    height: 200px;
+    border: 10px solid blue;
+}
+
+/* Стили к заданию 8 */
+
+.task8-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task8-table {
+    border: 10px solid #003cff;
+    font-size: 30px;
+}
+
+
+.task8-table thead tr th { /*стили для ячеек шапки таблицы*/
+    background-color: #ffd500;
+    color: red;
+    padding: 15px;
+    border: 3px dashed red;
+}
+
+.task8-table tbody tr td { /*стили для ячеек*/
+    background-color: #00ff2f;
+    border: 2px solid yellow;
+}
+
+/*Стили для задания 9*/
+
+.task9-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f200ff;
+    margin: 0 auto;
+    width: 1000px;
+    height: 900px;
+    padding: 30px;
+}
+
+.task9-head {
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+
+.task9-paragraph {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.task9-head2 {
+    color: blue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-style: italic;
+}
+
+
+.task9-img {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.task9-img-container {
+    width: 350px;
+    height: 350px;
+    margin-left: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border: 5px dashed transparent;
+    color: black;
+    border-radius: 10px;
+    background-size: 200% 100%;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.task9-table-container {
+    width: 490px;
+    margin-left: 260px;
+    border: 5px solid red;
+    padding: 5px;
+}
+
+.task9-table thead tr th{
+    background-color: #ff7300;
+    padding: 8px;
+    color: #003cff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    border: 3px dashed #9c4803;
+}
+
+.task9-table tbody tr td {
+    border: 3px solid red;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.task9-table {
+    border: 5px solid red;
+    background-color: #2c9200;
 }
