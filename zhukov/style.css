@@ -1,0 +1,205 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #696969; /* Dark gray background for the entire page */
+    color: #fff; /* White text for better readability on dark background */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+.header {
+    background-color: #FF4500;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 40px 0;
+    min-height: calc(100vh - 200px); /* Ensures main content takes up most of the viewport height */
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+/* стили для кнопок */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #ff1493;
+    background-color: #414040;
+    border: 2px solid #ff1493;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover {
+    background-color: rgba(255, 20, 147, 0.1); /* Slightly visible pink background on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.info-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.info-block {
+    display: none;
+}
+
+.info-block h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f69a31; /* Deep pink headers */
+}
+
+.info-block p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.info-block ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.info-block li {
+    margin-bottom: 8px;
+}
+
+.photo-placeholder {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #7a7a7a; /* Slightly lighter than the page background */
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navigation {
+        margin-top: 15px;
+    }
+    
+    .nav-item {
+        margin: 0 10px;
+    }
+    
+    .buttons-container {
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .intro-text {
+        font-size: 16px;
+    }
+}
