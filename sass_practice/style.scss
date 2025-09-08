@@ -14,10 +14,17 @@ summary::-webkit-details-marker {
 }
 
 .header {
+    position: relative;
     background-color: $backBlock;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
-    @extend %flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 
     &__left {
         display: flex;
@@ -25,6 +32,32 @@ summary::-webkit-details-marker {
         gap: 41px;
         @extend %flex;
     }
+
+    &__right {
+        color: #fff;
+    }
+
+    .burger-menu-icon {
+        &__line {
+            background: #fff;
+            width: 20px;
+            height: 2px;
+            margin: 6px 0;
+        }
+    }
+}
+
+
+
+.nav {
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 75px;
+    right: 0px;
 }
 
 a {
@@ -56,15 +89,23 @@ a {
         font-size: 25px;
         line-height: 17px;
         color: #ff3881;
+        padding-left: 30px;
     }
 }
 
 .breadcrumbs {
+    
     .link {
         font-family: 'latoblack';
         font-weight: normal;
         color: gray;
     }
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 .product {
@@ -120,9 +161,10 @@ a {
     padding-top: 13px;
     width: 300px;
     position: relative;
-    top: 41px;
+    top: -6px;
     box-sizing: border-box;
     z-index: 10;
+    left: 40px;
 
     &__content {
         background-color: #fff;
@@ -155,7 +197,7 @@ a {
     &__heading {
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 20px;
         /*line-height: 17;*/
         color: $textColor;
     }
@@ -203,17 +245,61 @@ a {
 }
 
 .sort {
-    position: absolute;
-    left: 690px;
-    top: 51px;
+    display: flex;
+    gap: 30px;
+    padding-top: 12px;
+    padding-left: 30px;
+
+    &__details {
+        position: relative;
+    }
+
+    &__heading {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        color: #6f6e6e;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+    }
+
+    &__check {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #6f6e6e;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #fff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.25);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -9px;
+    }
 }
 
 .filter-sort {
+    display: flex;
     height: 132px;
     position: relative;
     padding-top: 39px;
     box-sizing: border-box;
-    display: flex;
     gap: $gapGrid;
 }
 
