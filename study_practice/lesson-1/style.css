@@ -1,0 +1,135 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    pading: 0;
+    background-color: #020a18;
+}
+
+.menu_buttons {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.very-main-head {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-head {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.aboutme-img {
+    border-radius: 10px;
+    height: 250px;
+    margin-right: 40px;
+}
+
+.input-space {
+    width: 220px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.button-form {
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #3a68b8;
+    color: #fff;
+    margin-right: 20px;
+}
+
+header > ul {
+    display: flex;
+    justify-content: center;
+}
+
+header > ul > li {
+    margin: 15px;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+main > form {
+    margin-left: 60px;
+}
+
+.aboutme-head {
+    margin: 20px;
+
+}
+
+.aboutme-info {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+}
+
+.form-buttons-pack {
+    margin-left: 10px;
+}
+
+.feedback-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-form {
+    padding-bottom: 150px;
+}
+
+a:checked {
+    color:#3a68b8;
+}
